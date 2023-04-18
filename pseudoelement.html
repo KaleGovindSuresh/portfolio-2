@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        p{
+            text-indent: 50px;
+        }
+        p::selection{
+            background-color: yellow;
+            color: red;
+        }
+        p::first-line{
+            font-style: italic;
+            font-weight: bold;
+        }
+        p::first-letter{
+            text-transform: uppercase;
+            color: red;
+            font-size: 24px;
+        }
+        p::before{
+            content: "->";
+        }
+        p::after{
+            content: "...";
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quod recusandae nobis consequuntur magni dignissimos, voluptates adipisci neque quidem quia perferendis! Corporis atque tenetur asperiores quas eum, doloremque deserunt nobis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae error accusantium provident dolor? Amet repudiandae harum itaque inventore nisi impedit veniam maxime nihil soluta vero ducimus nam, voluptatum animi?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente iure ex suscipit aspernatur facere placeat consequuntur unde eveniet sunt. Similique soluta consequuntur animi beatae maxime alias magnam iusto quis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium error alias, quidem quod quaerat repellat distinctio qui officia veniam itaque consectetur inventore, magnam voluptatem asperiores exercitationem sapiente hic, autem labore!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus dolores, molestias pariatur earum debitis laboriosam similique obcaecati qui ex facere enim officia dicta, excepturi minus. Veritatis odio facilis molestias vero.
+    </p>
+</body>
+</html>

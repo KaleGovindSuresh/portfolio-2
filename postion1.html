@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+        }
+        .first{
+            background-color: red;
+        }
+        .second{
+            width: 300px;
+            background-color: green;
+            left: 50px;
+        }
+        .third{
+            width: 350px;
+            background-color: blue;
+            position: absolute;
+        }
+        section{
+            height: 150px;
+            background-color:green;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        relative
+       - Top,bottom,right,left properties start its measurement from initail 
+        position of the element 
+       
+       -It will not free the space taken on the normal flow of the web page  
+
+    </pre>
+    <div class="first"></div>
+    <section>  
+        <div class="second"></div>
+    </section>
+    
+    <div class="third"></div>
+</body>
+</html>

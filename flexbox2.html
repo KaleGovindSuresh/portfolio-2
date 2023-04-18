@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        section{
+            display: flex;
+            border: 2px solid;
+            height: 100vh;
+            align-items: flex-start;
+        }
+        div{
+            font-size: 100px;
+            color: #fff;
+            padding: 40px;
+            max-width: 200px;
+        }
+        .first{
+            background-color: chartreuse;
+            align-self: flex-start;
+            margin-bottom: auto;
+        }
+        .second{
+            background-color: magenta;
+            align-self: center;
+            margin-top: auto;
+        }
+        .third{
+            background-color: mediumblue;
+            align-self: stretch;
+            margin-right: auto;
+        }
+        .forth{
+            background-color: red;
+            align-self: flex-end;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="forth">4</div>
+    </section>
+</body>
+</html>

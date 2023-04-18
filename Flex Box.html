@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+           display: flex;
+           border: 2px solid #000;
+           height: 100vh;
+           flex-direction: row;
+           justify-content: flex-start;
+           align-items: flex-start;
+           flex-wrap: wrap;
+           align-content: flex-start;
+        }
+      
+        div{
+        color: #fff;
+        padding: 40px;
+        max-width: 200px;
+        }
+        div:nth-child(even){
+            background-color: chartreuse;
+        }
+        div:nth-child(odd){
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="item" id="item-1" >first Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item" id="item-2">second </div>
+        <div class="item" id="item-3">third Nulla alias ullam perspiciatis a ut! </div>
+        <div class="item" id="item-4">forth Enim modi qui aperiam,t! Dolores facere quidem corporis? Consectetur!</div>
+        <div class="item" id="item-5">fifth t! Dolores facere quidem corporis? Consectetur!</div>
+        <div class="item" id="item-6">sixth</div>
+        <div>Enim modi qui aperiam,t! Dolores facere quidem corporis? Consectetur!</div>
+    </section>
+</body>
+</html>  

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        div{
+            height: 100px;
+            text-align: center;
+            color: #fff;
+        }
+        div:nth-child(1){
+           background-color: red;
+        }
+        div:nth-child(2){
+            background-color: green;
+        }
+        div:nth-child(3){
+            background-color: blue;
+        }
+        div:nth-child(4){
+            background-color: orange;
+        }
+
+        @media screen and (min-width:576px){
+            section{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            div{
+                width: 45%;
+            }
+            div:nth-child(1){
+           background-color: red;
+        }
+        div:nth-child(2){
+            order: 3;
+        }
+        div:nth-child(3){
+            order: 2;
+        }
+        div:nth-child(4){
+            background-color: orange;
+            order: 4;
+        }
+            
+        }
+
+        @media screen and (min-width:768px){
+            div{
+                width: 24%;
+                order: 0;
+            }
+            div:nth-child(2){
+                order:0;
+            }
+            div:nth-child(3){
+                order:0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</body>
+</html>

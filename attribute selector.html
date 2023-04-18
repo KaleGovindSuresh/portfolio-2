@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        a[href]{
+          color: red;
+        }
+        a[href="https:/www.topperskills.com"] {
+            color: green;
+        }
+        a[href^="https"] {
+        color:blue
+        }
+        a[href$=".com"] {color: cyan;}
+        a[href*="topperskills"]{
+            color: magenta;
+        }
+        a[href~="topperskills"]{
+            color: yellow;
+        }
+    </style>
+</head>
+   <h1>Attribute Selectors</h1>
+   <p>
+       Attribute Selectors are used to select the elements based on thier Attributes  
+   </p>
+   <pre>
+       syntax:
+       selector[attribue-name]{
+           declaration
+       }
+   </pre>
+    <a No Link ></a><br>
+    <a href="https:/www.topperskills.com"> https with link .com </a><br>
+    <a href="http:/www.topperskills.com"> http with link .com"></a><br>
+    <a href="https:/www.google.com"> https google.com"></a>
+    <a href="https:/www.google.co.in"> https google.co.in"></a>
+</body>
+</html>

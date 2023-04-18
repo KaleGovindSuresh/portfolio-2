@@ -1,0 +1,26 @@
+.Funfood_image{
+    background-color: red;
+    background-image: url("foody.png") ;
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+}
+
+.funsource_wallpaper{
+    color:rgb(24, 20, 20);
+    position: absolute;
+    top: 50%; 
+}
+
+.funsource_wallpaper{
+    font: size 2.9rem;
+    text-align: center;
+}
+.form_code.post_code{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    padding: 3rem;
+}
